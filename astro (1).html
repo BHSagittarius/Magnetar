@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astro — Magnetar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="logo">Magne<span>tar</span></a>
+      <button id="nav-toggle" aria-label="Ouvrir le menu">☰</button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="astro.html" class="active">Astro</a>
+        <a href="jour.html">Jour</a>
+        <a href="materiel.html">Matériel</a>
+        <a href="apropos.html">À propos</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="wrap" style="padding-top:4rem;">
+    <p class="eyebrow">Photographie nocturne</p>
+    <h1 style="font-family:var(--font-display); font-weight:500; font-size:clamp(2rem,4vw,3rem); max-width:20ch;">Ciel étoilé</h1>
+    <p style="color:var(--text-dim); max-width:55ch; margin-top:1rem;">Prises de vue longue exposition du ciel nocturne. Chaque photo est accompagnée de ses réglages.</p>
+  </section>
+
+  <section class="wrap">
+    <div class="gallery">
+
+      <!-- Un item de galerie = une photo. Copie ce bloc <div class="card">...</div>
+           pour ajouter une nouvelle photo. Remplace le contenu de .card-img
+           par une vraie balise <img src="images/astro/nom.jpg" alt="..."> -->
+
+      <div class="card">
+        <div class="card-img">
+          <!-- <img src="images/astro/voie-lactee.jpg" alt="Voie lactée"> -->
+          photo à ajouter
+        </div>
+        <div class="card-body">
+          <div class="card-title">Ciel étoilé</div>
+          <div class="exif">
+            <span>ISO</span> 3200
+            <span>·</span>
+            <span>objectif</span> 18mm
+            <span>·</span>
+            <span>pose</span> unique
+          </div>
+        </div>
+      </div>
+
+      <!-- Exemple de carte vide à dupliquer -->
+      <div class="card">
+        <div class="card-img">photo à ajouter</div>
+        <div class="card-body">
+          <div class="card-title">Titre de la photo</div>
+          <div class="exif"><span>ISO</span> — <span>·</span> <span>pose</span> —</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:1rem;">
+      <span>Magnetar — © 2026</span>
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
