@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matériel — Magnetar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="logo">Magne<span>tar</span></a>
+      <button id="nav-toggle" aria-label="Ouvrir le menu">☰</button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="astro.html">Astro</a>
+        <a href="jour.html">Jour</a>
+        <a href="materiel.html" class="active">Matériel</a>
+        <a href="apropos.html">À propos</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="wrap" style="padding-top:4rem;">
+    <p class="eyebrow">Setup</p>
+    <h1 style="font-family:var(--font-display); font-weight:500; font-size:clamp(2rem,4vw,3rem);">Matériel & méthode</h1>
+    <p style="color:var(--text-dim); max-width:55ch; margin-top:1rem;">Un boîtier simple et peu de matériel : ce qui compte, ce sont les réglages et la patience. Voici l'essentiel de mon setup et la méthode que j'utilise pour chaque sortie.</p>
+  </section>
+
+  <section class="wrap">
+    <div class="gear-list">
+      <div class="gear-item">
+        <div class="label">Boîtier</div>
+        <div class="value">
+          <h3>Canon EOS 700D</h3>
+          <p>Reflex APS-C utilisé pour l'ensemble des prises de vue, astro comme jour.</p>
+        </div>
+      </div>
+      <div class="gear-item">
+        <div class="label">Objectif</div>
+        <div class="value">
+          <h3>18mm</h3>
+          <p>Grand-angle, adapté aux poses larges du ciel étoilé.</p>
+        </div>
+      </div>
+      <div class="gear-item">
+        <div class="label">Traitement</div>
+        <div class="value">
+          <h3>Canon Digital Photo Professional</h3>
+          <p>Développement des poses uniques (ISO élevé, ex. 3200) pour révéler le ciel nocturne.</p>
+        </div>
+      </div>
+      <div class="gear-item">
+        <div class="label">Accessoires</div>
+        <div class="value">
+          <h3>Trépied & télécommande</h3>
+          <p>Indispensables pour les poses longues : le moindre mouvement flou toute la photo. La télécommande évite de toucher le boîtier au déclenchement.</p>
+        </div>
+      </div>
+      <div class="gear-item">
+        <div class="label">Méthode</div>
+        <div class="value">
+          <h3>Repérage & patience</h3>
+          <p>Ciel bien dégagé, loin de la pollution lumineuse, mise au point manuelle sur une étoile brillante avant de lancer la série de poses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="section-head">
+      <h2>Réglages de référence</h2>
+      <span class="coord">point de départ pour une pose unique du ciel nocturne</span>
+    </div>
+    <div class="gallery">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title">Ciel étoilé (grand-angle)</div>
+          <div class="exif">
+            <span>ISO</span> 3200
+            <span>·</span>
+            <span>ouverture</span> f/3.5
+            <span>·</span>
+            <span>pose</span> 15s
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title">Voie lactée (ciel très noir)</div>
+          <div class="exif">
+            <span>ISO</span> 1600
+            <span>·</span>
+            <span>ouverture</span> f/3.5
+            <span>·</span>
+            <span>pose</span> 20s
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title">Paysage nocturne (premier plan)</div>
+          <div class="exif">
+            <span>ISO</span> 800
+            <span>·</span>
+            <span>ouverture</span> f/5.6
+            <span>·</span>
+            <span>pose</span> 30s
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:1rem;">
+      <span>Magnetar — © 2026</span>
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
