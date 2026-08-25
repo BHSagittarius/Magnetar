@@ -49,4 +49,32 @@ if (canvas) {
   } else {
     draw(0);
   }
+  const lightbox = document.getElementById("lightbox");
+const lbImg = document.getElementById("lb-img");
+let currentAlbum = [];
+let currentIndex = 0;
+
+function openLightbox(album, index) {
+  currentAlbum = album;
+  currentIndex = index;
+  lbImg.src = currentAlbum[currentIndex];
+  lightbox.classList.add("open");
+}
+function showImage(delta) {
+  currentIndex = (currentIndex + delta + currentAlbum.length) % currentAlbum.length;
+  lbImg.src = currentAlbum[currentIndex];
+}
+
+document.querySelectorAll(".card[data-album]").forEach(card => {
+  card.style.cursor = "pointer";
+  card.addEventListener("click", () => {
+    const album = card.dataset.album.split(",");
+    openLightbox(album, 0);
+  });
+});
+
+document.querySelector(".lb-close").addEventListener("click", () => lightbox.classList.remove("open"));
+document.querySelector(".lb-prev").addEventListener("click", () => showImage(-1));
+document.querySelector(".lb-next").addEventListener("click", () => showImage(1));
+lightbox.addEventListener("click", e => { if (e.target === lightbox) lightbox.classList.remove("open"); })
 }
