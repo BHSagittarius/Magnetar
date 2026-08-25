@@ -481,3 +481,24 @@ a:focus-visible, button:focus-visible {
   outline: 2px solid var(--accent-gold);
   outline-offset: 3px;
 }
+.lightbox {
+  display: none;
+  position: fixed; inset: 0;
+  background: rgba(11,14,26,0.95);
+  z-index: 100;
+  align-items: center; justify-content: center;
+}
+.lightbox.open { display: flex; }
+.lightbox img {
+  max-width: 85vw; max-height: 85vh;
+  border-radius: 6px;
+}
+.lb-close, .lb-prev, .lb-next {
+  position: absolute;
+  background: none; border: none;
+  color: var(--text); font-size: 2rem;
+  cursor: pointer; padding: 0.5rem;
+}
+.lb-close { top: 1.5rem; right: 1.5rem; }
+.lb-prev { left: 1.5rem; top: 50%; transform: translateY(-50%); }
+.lb-next { right: 1.5rem; top: 50%; transform: translateY(-50%); }
